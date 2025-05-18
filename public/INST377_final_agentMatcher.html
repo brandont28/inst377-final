@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Final</title>
+    <link rel="stylesheet" href="INST377_final_css.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="INST377_final_js.js"></script>
+  </head>
+  <body data-page="matcher">
+    <!--Page Heading-->
+    <header>
+      <h1>Valorant Beginner Guide</h1>
+      <img
+        src="https://1000logos.net/wp-content/uploads/2022/09/Valorant-Emblem.png"
+      />
+    </header>
+
+    <!--Nav-->
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="INST377_final_agentMatcher.html">Agent Matcher</a></li>
+        <li><a href="INST377_final_about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <!--Main Body Content-->
+    <div class="main-container">
+      <div class="matcher-content" id="matcher-content">
+        <h1>Agent Matcher Tool</h1>
+        <p id="explanation" style="display: block">
+          Insert some information in the box to the right and receive a
+          suggestion on what agent you should play based on your favorite map!
+        </p>
+        <h2 id="selectedRole"></h2>
+        <h2 id="selectedMap"></h2>
+        <h2 id="suggestedAgent"></h2>
+      </div>
+    </div>
+    <!--Sidebar-->
+    <div class="sidebar-container">
+      <aside id="userDataInput">
+        <h1>About You</h1>
+        <p>
+          Insert a little information to receive a suggestion on what agent you
+          should play!
+        </p>
+        <form id="userForm">
+          <label for="first_name">First Name:</label>
+          <input type="text" name="first_name" id="first_name" required />
+          <br />
+          <br />
+          <label for="last_name">Last Name:</label>
+          <input type="text" name="last_name" id="last_name" required />
+          <br />
+          <br />
+          <label for="main_role">Main Role:</label>
+          <select name="main_role" id="main_role" required>
+            <option value="Duelist">Duelist</option>
+            <option value="Initiator">Initiator</option>
+            <option value="Controller">Controller</option>
+            <option value="Sentinel">Sentinel</option>
+          </select>
+          <br />
+          <br />
+          <label for="fav_map">Favorite Map:</label>
+          <select name="fav_map" id="fav_map" required></select>
+          <input type="submit" />
+        </form>
+      </aside>
+    </div>
+  </body>
+</html>

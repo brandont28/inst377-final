@@ -1,0 +1,277 @@
+body {
+    background-color: #111111;
+    color:white;
+    font-family: monospace;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+header img{
+    width:auto;
+    height: 80px;
+}
+
+/*Navigation Bar*/
+#main-nav {
+    background-color: #292929;
+    text-align: center;
+    padding-right: 30px;
+}
+
+#main-nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+#main-nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 20px 40px 20px 40px;
+}
+
+#main-nav li:hover {
+    background-color: #ff4655;
+}
+
+/*HOME PAGE*/
+
+/*Main Container*/
+.main-container {
+    float: left;
+    width: 65%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/*Universal Slides Styling*/
+[data-simple-slider] {
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+}
+
+[data-simple-slider] > div {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  text-align: center;
+  
+}
+
+[data-simple-slider] img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Agent Slides*/
+.agent-content {
+    background-color: #292929;
+    border: solid 3px #ff4655;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+#agentSlides {
+    width: 500px;
+    height: 500px;
+}
+
+#agentControls {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*Map Slides */
+.maps-content {
+    background-color: #292929;
+    border: solid 3px #ff4655;
+    border-radius: 15px;
+    width: 100%;
+    padding: 15px;
+}
+
+#mapSlides {
+    width: 800px;
+    height: 400px;
+}
+
+
+#mapControls {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*Button Customization*/
+.customBut {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #ff4655;
+  background-image: linear-gradient(45deg, #ff4655 0%, #f05d19  51%, #ff4655  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.customBut:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.customBut:active {
+  transform: scale(0.95);
+}
+
+/*Sidebar content including weapons and competitive tiers*/
+.sidebar-container {
+    width: 27%;
+    float: right;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+
+aside {
+    background-color: #292929;
+    border: solid 3px #ff4655;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+/*Top Weapons Sidebar*/
+#weapons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+    padding: 10px;
+}
+
+#weapons div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#weapons img {
+    width: 400px;
+}
+
+/*Competitive Tiers Sidebar*/
+#ranks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    padding: 10px;
+}
+
+#ranks div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: calc(33.33% - 20px);
+    
+}
+
+#ranks img {
+    width: 35px;
+    padding-right: 5px;
+}
+
+/*AGENT MATCHER*/
+.matcher-content {
+    background-color: #292929;
+    border: solid 3px #ff4655;
+    border-radius: 15px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    gap: 20px;
+}
+
+.matcher-content h1 {
+    font-size: 30px;
+}
+
+.matcher-content p {
+    font-size: 20px;
+}
+
+.matcher-content img {
+    width: 500px;
+    height: 500px;
+}
+
+#userDataInput h1 {
+    font-size: 30px;
+}
+
+#userDataInput {
+    font-size: 20px;
+}
+
+#userForm {
+    padding: 15px;
+}
+
+/*ABOUT ME*/
+.projectExplanation {
+    background-color: #292929;
+    border: solid 3px #ff4655;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.projectExplanation h1 {
+    font-size: 30px;
+}
+
+.projectExplanation p {
+    font-size: 20px;
+}
+
+#aboutMe h1 {
+    font-size: 30px;
+}
+
+#aboutMe p {
+    font-size: 20px;
+}
+
+

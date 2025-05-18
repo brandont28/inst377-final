@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Final</title>
+    <link rel="stylesheet" href="INST377_final_css.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+    <script src="INST377_final_js.js"></script>
+  </head>
+  <body data-page="home">
+    <!--Page Heading-->
+    <header>
+      <h1>Valorant Beginner Guide</h1>
+      <img
+        src="https://1000logos.net/wp-content/uploads/2022/09/Valorant-Emblem.png"
+      />
+    </header>
+
+    <!--Nav-->
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="INST377_final_agentMatcher.html">Agent Matcher</a></li>
+        <li><a href="INST377_final_about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <!--Main Body Content-->
+    <div class="main-container">
+      <div class="agent-content">
+        <div data-simple-slider id="agentSlides"></div>
+        <div id="agentControls">
+          <button class="customBut" id="previousAgent">Previous Agent</button>
+          <button class="customBut" id="nextAgent">Next Agent</button>
+        </div>
+      </div>
+
+      <div class="maps-content">
+        <div data-simple-slider id="mapSlides"></div>
+        <div id="mapControls">
+          <button class="customBut" id="previousMap">Previous Map</button>
+          <button class="customBut" id="nextMap">Next Map</button>
+        </div>
+      </div>
+    </div>
+
+    <!--Sidebar-->
+    <div class="sidebar-container">
+      <aside id="topWeapons">
+        <h1>Top Weapons</h1>
+        <div id="weapons"></div>
+      </aside>
+      <aside id="compTiers">
+        <h1>Competitive Ranks</h1>
+        <div id="ranks"></div>
+      </aside>
+    </div>
+  </body>
+</html>
