@@ -45,7 +45,7 @@ This portion covers instructions for future developers on how to install the app
 
    - npm install nodemon
 
-Additional dependencies such as Javascript libraries of Simple-Slider and Toastify are already linked in the html files but more libraries can be added at any time.
+   Additional dependencies such as Javascript libraries of Simple-Slider and Toastify are already linked in the html files but more libraries can be added at any time.
 
 3. SUPABASE Integration
    If it is desired that the application uses a different database, one can create a new project on supabase.com. Current table names are user_info and agent_map_matcher so any reference to these supabase tables must be changed if using alternative names. Additionally, a new supabase URL and supabase key will need to be generated and implemented.
@@ -63,19 +63,19 @@ Additional dependencies such as Javascript libraries of Simple-Slider and Toasti
 
    Fetches all agent information from the API and returns agent names and display images. Javascript code filters out a duplicate 'Sova' object. Used on the home slider page as well as when displaying the matched agent on the agent matcher page.
 
-   - https://valorant-api.com/v1/agents
+   - fetch(`https://valorant-api.com/v1/agents`)
 
    Fetches all map information from the API and returns map names and splash screen images. Javascript code filters out only maps in active competitive rotation currently. This is used twice to populate the map slider as well as populating the favorite map selection form.
 
-   - https://valorant-api.com/v1/maps
+   - fetch(`https://valorant-api.com/v1/maps`)
 
    Fetches all weapon information from the API and returns the name and display icon. Javascript code filters for only the Vandal, Phantom, and Operator specifically as those are the most used and popular weapons.
 
-   - https://valorant-api.com/v1/weapons
+   - fetch(`https://valorant-api.com/v1/weapons`)
 
    Fetches all competitive tier information from the API and returns the tier name and icon. Javascript code filters out the first 3 objects as they are either unused or considered unranked.
 
-   - https://valorant-api.com/v1/competitivetiers
+   - fetch(`https://valorant-api.com/v1/competitivetiers`)
 
    Post to the supabase table called user-info when user inputs information and submits the userForm located in the INST377_final_agentMatcher.html file.
 
